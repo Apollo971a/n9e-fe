@@ -4,7 +4,6 @@ const ar_AE = {
     404: 'الصفحة التي تحاول الوصول إليها غير موجودة.',
     '404_btn': 'العودة إلى الصفحة الرئيسية',
   },
-
   business_group: 'مجموعة الأعمال',
   business_groups: 'مجموعات الأعمال',
   search_placeholder: 'يرجى إدخال كلمة البحث',
@@ -23,15 +22,12 @@ const ar_AE = {
   and: 'و',
   yes: 'نعم',
   no: 'لا',
-
   host: {
     tags: 'وسوم مخصصة',
     tags_tip: 'الوسوم التي يحددها المستخدم سيتم إضافتها إلى بيانات المراقبة الخاصة بهذه الآلة',
     host_tags: 'الوسوم المرسلة',
-    host_tags_tip:
-      'الوسوم المعرّفة في categraf global.labels ستظهر هنا، ويتطلب ذلك ترقية categraf إلى الإصدار v0.3.80 أو أعلى',
+    host_tags_tip: 'الوسوم المعرّفة في categraf global.labels ستظهر هنا، ويتطلب ذلك ترقية categraf إلى الإصدار v0.3.80 أو أعلى',
   },
-
   btn: {
     add: 'إضافة',
     create: 'إنشاء',
@@ -70,7 +66,6 @@ const ar_AE = {
     search: 'بحث',
     reset: 'إعادة تعيين',
   },
-
   table: {
     name: 'الاسم',
     ident: 'المعرّف',
@@ -89,7 +84,6 @@ const ar_AE = {
     username: 'اسم المستخدم',
     nickname: 'الاسم المعروض',
   },
-
   datasource: {
     prod: 'نوع المراقبة',
     name: 'مصدر البيانات',
@@ -106,8 +100,7 @@ const ar_AE = {
       label: 'تصفية مصدر البيانات',
       match_type_0: 'تطابق دقيق',
       match_type_1: 'تطابق تقريبي',
-      match_type_1_tip:
-        'يدعم نوعين من الرموز<br>* يطابق أي عدد من الأحرف<br>? يطابق حرفًا واحدًا فقط',
+      match_type_1_tip: 'يدعم نوعين من الرموز<br>* يطابق أي عدد من الأحرف<br>? يطابق حرفًا واحدًا فقط',
       match_type_2: 'جميع مصادر البيانات',
       op_in: 'يتضمن',
       op_not_in: 'لا يتضمن',
@@ -115,14 +108,12 @@ const ar_AE = {
     },
     managePageLink: 'انقر للانتقال إلى إدارة مصادر البيانات',
   },
-
   confirm: {
     delete: 'هل أنت متأكد من الحذف؟',
     clone: 'هل أنت متأكد من الاستنساخ؟',
     save: 'هل تريد حفظ التغييرات؟',
     close_without_saving: 'لم يتم حفظ الإعدادات، هل تريد الإغلاق؟',
   },
-
   success: {
     submit: 'تم الإرسال بنجاح',
     modify: 'تم التعديل بنجاح',
@@ -135,14 +126,12 @@ const ar_AE = {
     import: 'تم الاستيراد بنجاح',
     save: 'تم الحفظ بنجاح',
   },
-
   error: {
     clone: 'فشل الاستنساخ',
     import: 'فشل الاستيراد',
     create: 'فشل الإنشاء',
     export: 'فشل التصدير',
   },
-
   time: {
     millisecond: 'مللي ثانية',
     ms: 'مللي ثانية',
@@ -156,22 +145,18 @@ const ar_AE = {
     d: 'ي',
     weekdays: ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'],
   },
-
   severity: {
     1: 'إنذار حرج (Critical)',
     2: 'إنذار تحذيري (Warning)',
     3: 'معلومة (Info)',
   },
-
   download_json: 'تنزيل JSON',
-
   batch: {
     export: {
       copy: 'نسخ JSON إلى الحافظة',
     },
     not_select: 'يرجى تحديد البيانات أولاً',
   },
-
   invalidDatasource: 'مصدر بيانات غير صالح',
   copyToClipboard: 'نسخ إلى الحافظة',
   copyToClipboardFailed: 'فشل النسخ إلى الحافظة',
@@ -187,11 +172,91 @@ const ar_AE = {
   select_event: 'اختر حدث التنبيه',
   click_to_view_doc: 'انقر لعرض الوثائق',
 
+  // 临时把 task 的翻译放在这里
   tpl: 'نصوص المعالجة الذاتية',
+  'tpl.create': 'إنشاء',
+  'tpl.tag.bind': 'ربط وسم',
+  'tpl.tag.unbind': 'إلغاء ربط وسم',
+  'tpl.tag.bind.title': 'ربط الوسوم بشكل جماعي',
+  'tpl.tag.bind.field': 'الوسوم المراد ربطها',
+  'tpl.tag.bind.success': 'تم ربط الوسوم بنجاح',
+  'tpl.tag.unbind.title': 'إلغاء ربط الوسوم بشكل جماعي',
+  'tpl.tag.unbind.field': 'الوسوم المراد إلغاء ربطها',
+  'tpl.tag.unbind.success': 'تم إلغاء ربط الوسوم بنجاح',
+  'tpl.node.modify': 'تعديل العقدة',
+  'tpl.node.modify.title': 'تعديل العقد بشكل جماعي',
+  'tpl.batch.modify.group': 'تعديل مجموعة الانتماء بشكل جماعي',
+  'tpl.title': 'العنوان',
+  'tpl.title.tpl.help': 'العنوان الذي يوضح وظيفة هذا النص البرمجي',
+  'tpl.title.task.help': 'العنوان الذي يوضح وظيفة هذه المهمة',
+  'tpl.tags': 'الوسوم',
+  'tpl.tags.help': 'الوسوم المستخدمة للتصنيف',
+  'tpl.creator': 'المنشئ',
+  'tpl.last_updator': 'آخر من قام بالتحديث',
+  'tpl.last_updated': 'آخر وقت تحديث',
+  'tpl.account.help': 'حساب التنفيذ، يُنصح بعدم استخدام root إلا عند الضرورة القصوى',
+  'tpl.batch.help': 'درجة التوازي، القيمة الافتراضية 0 تعني تنفيذ متزامن كامل، 1 تنفيذ تسلسلي، 2 تنفيذ جهازين في كل مرة',
+  'tpl.tolerance.help': 'عدد الأجهزة المسموح بفشلها، القيمة الافتراضية 0 تعني عدم السماح بأي فشل، عند حدوث فشل يتم الإيقاف فوراً',
+  'tpl.timeout.help': 'المدة القصوى لتنفيذ النص البرمجي على جهاز واحد (بالثواني)',
+  'tpl.pause.help': 'نقطة التوقف المؤقت بعد الانتهاء من تنفيذ جهاز معين',
+  'tpl.host.help': 'قائمة الأجهزة المراد تنفيذ المهمة عليها',
+  'tpl.host.help2': 'متطلب مسبق: يجب تثبيت categraf على الأجهزة المستهدفة وتفعيل ibex عبر ضبط enable=true',
+  'tpl.host.filter_btn': 'تصفية الأجهزة',
+  'tpl.script.help': 'محتوى النص البرمجي المراد تنفيذه',
+  'tpl.args.help': 'المعاملات المضافة بعد النص البرمجي، يتم الفصل بينها باستخدام ,, مثل: arg1,,arg2,,arg3',
+  'tpl.modify': 'تحرير النص البرمجي',
+  'tpl.create.task': 'إنشاء مهمة',
+  'tpl.callback': 'عنوان الاستدعاء الذاتي لمعالجة التنبيه',
+  'tpl.allOptionLabel': 'جميع النصوص البرمجية',
+
   task: 'مهام المعالجة الذاتية',
+  'task.create': 'إنشاء مهمة',
+  'task.title': 'العنوان',
+  'task.done': 'مكتملة',
+  'task.clone': 'استنساخ المهمة',
+  'task.meta': 'البيانات الوصفية',
+  'task.creator': 'المنشئ',
+  'task.created': 'وقت الإنشاء',
+  'task.only.mine': 'عرض مهامي فقط',
+  'task.host': 'الجهاز',
+  'task.status': 'الحالة',
+  'task.output': 'المخرجات',
+  'task.refresh': 'تحديث',
+  'task.control.params': 'معلمات التحكم',
+  'task.account': 'حساب التنفيذ',
+  'task.batch': 'درجة التوازي',
+  'task.tolerance': 'حد السماح بالفشل',
+  'task.timeout': 'المهلة الزمنية',
+  'task.script': 'محتوى النص البرمجي',
+  'task.script.args': 'معاملات النص البرمجي',
+  'task.pause': 'نقطة التوقف',
+  'task.host.list': 'قائمة الأجهزة',
+  'task.clone.new': 'استنساخ مهمة جديدة',
+  'task.temporary.create': 'إنشاء مهمة مؤقتة',
+  'task.save.temporarily': 'حفظ دون تنفيذ',
+  'task.save.execute': 'حفظ والتنفيذ فوراً',
+  'task.tip.title': 'معلومة',
+  'task.tip.content': 'إذا كان دورك مسؤول النظام، يمكنك تنفيذ النصوص على أي جهاز. أما المستخدم العادي فيمكنه التنفيذ فقط على الأجهزة التابعة لمجموعات الأعمال التي يمتلك صلاحيتها',
+  'task.allOptionLabel': 'جميع المهام',
+
+  'last.1.days': 'آخر يوم واحد',
+  'last.7.days': 'آخر 7 أيام',
+  'last.14.days': 'آخر 14 يوماً',
+  'last.15.days': 'آخر 15 يوماً',
+  'last.30.days': 'آخر 30 يوماً',
+  'last.60.days': 'آخر 60 يوماً',
+  'last.90.days': 'آخر 90 يوماً',
+
+  'msg.submit.success': 'تم الإرسال بنجاح',
+  'msg.modify.success': 'تم التعديل بنجاح',
+  'msg.create.success': 'تم الإنشاء بنجاح',
+  'msg.add.success': 'تمت الإضافة بنجاح',
+  'msg.delete.success': 'تم الحذف بنجاح',
+  'msg.clone.success': 'تم الاستنساخ بنجاح',
+  'msg.clone.error': 'فشل الاستنساخ',
+  'msg.sort.success': 'تم الترتيب بنجاح',
 
   copy_success: 'تم نسخ {{num}} سجل بنجاح',
-  request_fail_msg: 'انتهت مهلة الاتصال بالشبكة، يرجى المحاولة لاحقًا',
+  request_fail_msg: 'انتهت مهلة الاتصال بالشبكة، يرجى المحاولة لاحقاً',  
 };
-
 export default ar_AE;
