@@ -20,7 +20,7 @@ import _ from 'lodash';
 import { withTolgee, Tolgee, I18nextPlugin, DevTools } from '@tolgee/i18next';
 import { InContextTools } from '@tolgee/web/tools';
 
-const languages = ['zh_CN', 'en_US', 'zh_HK', 'ru_RU', 'ja_JP'];
+const languages = ['zh_CN', 'en_US', 'zh_HK', 'ru_RU', 'ja_JP', 'ar_AE']; // Add , 'ar_AE'
 const localStorageLanguage = localStorage.getItem('language');
 let language = 'zh_CN';
 if (localStorageLanguage && _.includes(languages, localStorageLanguage)) {
