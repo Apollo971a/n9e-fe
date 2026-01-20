@@ -1,0 +1,23 @@
+const ar_AE = {
+  tip: 'حالياً، ميزة "العرض" تدعم مصادر بيانات Prometheus و Doris فقط',
+  placeholder: 'تصفية العرض',
+  save_new: 'حفظ كعرض جديد',
+  save: 'حفظ العرض',
+  edit: 'تعديل العرض',
+  delete: 'حذف العرض',
+  confirm_delete: 'هل أنت متأكد من حذف هذا العرض؟',
+  reset: 'إعادة تعيين العرض',
+  reset_tip: 'إعادة تعيين شروط الاستعلام في الصفحة الحالية إلى الشروط التي كانت محفوظة في هذا العرض',
+  name: 'اسم العرض',
+  name_placeholder: 'يرجى إدخال اسم العرض',
+  public_cate: 'نطاق الرؤية',
+  public_cate_placeholder: 'الكل',
+  public_cate_0: 'أنا فقط',
+  public_cate_1: 'مرئي للفريق',
+  public_cate_2: 'مرئي للجميع',
+  search_placeholder: 'البحث في العروض',
+  gids: 'الفريق',
+  post_favorite: 'تمت الإضافة إلى المفضلة بنجاح',
+  delete_favorite: 'تمت الإزالة من المفضلة بنجاح',
+};
+export default ar_AE;
