@@ -1,0 +1,55 @@
+const ar_AE = {
+  explorer: {
+    execute: 'استعلام',
+    query: 'شروط الاستعلام',
+    query_required: 'شروط الاستعلام لا يمكن أن تكون فارغة',
+    query_lanaguage_docs: 'وثائق لغة الاستعلام',
+    limit: 'الحد الأقصى للنتائج',
+    hits: 'النتائج المطابقة',
+    graph_settings: {
+      title: 'إعدادات المخطط',
+      stacked: 'تكدس',
+      fill: 'تعبئة',
+    },
+    view: {
+      group: 'مجموعة',
+      table: 'جدول',
+      json: 'JSON',
+    },
+    total_logs_returned: 'إجمالي السجلات المسترجعة',
+    total_groups: 'إجمالي المجموعات',
+    page_size: 'عدد النتائج في الصفحة',
+    page_size_all: 'الكل',
+    expand_all: 'توسيع الكل',
+    collapse_all: 'طي الكل',
+    group_view: {
+      ungrouped: 'غير مجمع',
+      group_by_field: 'تجميع حسب "{{field}}"',
+      entries: 'إدخالات',
+      show_field_tip: 'إظهار الحقل',
+      hide_field_tip: 'إخفاء الحقل',
+      group_by_field_icon_tip: 'تجميع حسب هذا الحقل',
+    },
+    group_view_settings: {
+      title: 'إعدادات عرض المجموعة',
+      group_by_field: 'حقل التجميع',
+      group_by_field_help: 'اختر حقلاً لتجميع السجلات بناءً عليه (القيمة الافتراضية: _stream)',
+      ungrouped: 'بدون تجميع',
+      display_fields: 'الحقول المعروضة',
+      display_fields_help: 'اختر الحقول المراد عرضها (القيمة الافتراضية: _msg)',
+      date_format: 'تنسيق التاريخ',
+      date_format_help01: 'ضبط تنسيق التاريخ (مثلاً YYYY-MM-DD HH:mm:ss). <a>راجع هذه الوثائق لمزيد من المعلومات</a>',
+      date_format_help02: 'تنسيق التاريخ الحالي: {{dateFormat}}',
+    },
+    table_view_settings: {
+      title: 'إعدادات عرض الجدول',
+      customize_columns: 'تخصيص الأعمدة',
+      search_columns: 'البحث في الأعمدة',
+      check_all: 'تحديد الكل',
+    },
+    copy_json: 'نسخ JSON',
+  },
+  datasource: {},
+};
+
+export default ar_AE;
