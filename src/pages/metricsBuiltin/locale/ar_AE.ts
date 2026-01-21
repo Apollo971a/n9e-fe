@@ -1,0 +1,53 @@
+const ar_AE = {
+  title: 'عرض المقاييس (Metrics)',
+  name: 'اسم المقياس',
+  collector: 'الفئة',
+  typ: 'النوع',
+  unit: 'الوحدة',
+  unit_tip: 'تنسيق القيم تلقائياً بناءً على وحدة المقياس عند الرسم البياني',
+  note: 'الوصف',
+  note_preview: 'معاينة الوصف',
+  expression: 'التعبير (Expression)',
+  add_btn: 'إنشاء مقياس',
+  clone_title: 'نسخ المقياس',
+  edit_title: 'تعديل المقياس',
+  explorer: 'استعلام',
+  closePanelsBelow: 'إغلاق اللوحات السفلية',
+  addPanel: 'إضافة لوحة',
+  translation: 'شرح المقياس',
+  batch: {
+    not_select: 'يرجى اختيار المقاييس أولاً',
+    export: {
+      title: 'تصدير المقاييس',
+    },
+    import: {
+      title: 'استيراد المقاييس',
+      name: 'اسم المقياس',
+      result: 'نتيجة الاستيراد',
+      errmsg: 'رسالة الخطأ',
+    },
+  },
+  filter: {
+    title: 'شروط التصفية',
+    title_tip:
+      'تعمل شروط التصفية على تقليل نطاق البيانات عند عرض المقاييس. على سبيل المثال، إذا تم ضبط التصفية على {ident="n9e01"}، فإن الاستعلام عن cpu_usage_idle سيتحول إلى cpu_usage_idle{ident="n9e01"}، مما يقلل بشكل كبير من عدد السلاسل الزمنية المسترجعة.',
+    add_title: 'إضافة شرط تصفية جديد',
+    edit_title: 'تعديل شرط التصفية',
+    import_title: 'استيراد شروط التصفية',
+    name: 'الاسم',
+    datasource: 'مصدر البيانات',
+    datasource_tip: 'مصدر البيانات المساعد للاستعلام عن شروط التصفية',
+    configs: 'شروط التصفية',
+    groups_perm: 'الفرق المصرح لها',
+    groups_perm_gid_msg: 'يرجى اختيار الفرق المصرح لها',
+    perm: {
+      1: 'قراءة وكتابة',
+      0: 'قراءة فقط',
+    },
+    build_labelfilter_and_expression_error: 'فشل بناء شروط تصفية العلامات والتعبيرات',
+    filter_label_msg: 'العلامة (Label) لا يمكن أن تكون فارغة',
+    filter_oper_msg: 'عامل التشغيل (Operator) لا يمكن أن يكون فارغاً',
+    filter_value_msg: 'قيمة العلامة لا يمكن أن تكون فارغة',
+  },
+};
+export default ar_AE;
