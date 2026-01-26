@@ -334,8 +334,7 @@ function App() {
   return (
     <div className='App'>
       <CommonStateContext.Provider value={commonState}>
-       // <ConfigProvider locale={i18n.language == 'en_US' ? enUS : i18n.language == 'ru_RU' ? ruRU : zhCN}>
-       //add ar, hk, ja
+
         <ConfigProvider locale={i18n.language == 'en_US' ? enUS : i18n.language == 'ru_RU' ? ruRU : i18n.language == 'ar_AE' ? arEG : i18n.language == 'zh_HK' ? zhHK : i18n.language == 'ja_JP' ? jaJP : zhCN}>  
           <Router
             getUserConfirmation={(message, callback) => {
