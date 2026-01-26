@@ -84,14 +84,16 @@ export default function index(props: Props) {
     //reverse: true,
     // refreshFlag: undefined,
     //change to:
-  const [serviceParams, setServiceParams] = useState<{
+  type ServiceParams = {
   current: number;
   pageSize: number;
   reverse: boolean;
   refreshFlag?: string;
-  }>({
+  };
+
+  const [serviceParams, setServiceParams] = useState<ServiceParams>({
   current: 1,
-  pageSize: DEFAULT_LOGS_PAGE_SIZE,
+  pageSize: 10,
   reverse: false,
   refreshFlag: undefined,
   });
