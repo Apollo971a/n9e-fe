@@ -6,6 +6,9 @@ import { ConfigProvider } from 'antd';
 import antdZhCN from 'antd/lib/locale/zh_CN';
 import antdEnUS from 'antd/lib/locale/en_US';
 import antdRuRU from 'antd/lib/locale/ru_RU';
+import antdarEG from 'antd/lib/locale/ar_EG';  // add ar
+import antdzhHK from 'antd/lib/locale/zh_HK';  // add hk
+import antdjaJP from 'antd/lib/locale/ja_JP';  // add ja
 
 export interface ModalWrapProps {
   visible: boolean;
@@ -33,7 +36,8 @@ export default function ModalHOC<T>(Component: React.FC<T & ModalWrapProps>) {
 
     function render(props: any) {
       ReactDOM.render(
-        <ConfigProvider locale={language === 'en_US' ? antdEnUS : language === 'ru_RU' ? antdRuRU : antdZhCN}>
+        // <ConfigProvider locale={language === 'en_US' ? antdEnUS : language === 'ru_RU' ? antdRuRU : antdZhCN}>
+        <ConfigProvider locale={language === 'en_US' ? antdEnUS : language === 'ru_RU' ? antdRuRU : language === 'ar_AE' ? antdarEG : language === 'zh_HK' ? antdzhHK : language === 'ja_JP' ? antdjaJP : antdZhCN}>  // add ar, hk, ja  
           <Router>
             <Component {...props} />
           </Router>
