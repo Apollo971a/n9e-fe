@@ -27,7 +27,12 @@ interface Props<FilterValues> {
 
 const VERSION = '1.0.0';
 
-export default function index<FilterValues>(props: Props<FilterValues>) {
+// export default function index<FilterValues>(props: Props<FilterValues>) {
+// change to 
+export default function index<FilterValues extends Record<string, any>>(
+  props: Props<FilterValues>
+) {
+  
   const { t } = useTranslation('viewSelect');
   const { disabled, page, renderOptionExtra, onSelect, oldFilterValues, adjustOldFilterValues, placeholder } = props;
   const selectDropdownContainer = useRef<HTMLDivElement>(null);
