@@ -12,12 +12,24 @@ import DropdownTrigger from './DropdownTrigger';
 
 import './style.less';
 
-interface Props<FilterValues> {
-  disabled?: boolean;
-  page: string;
+//interface Props<FilterValues> {
+  //disabled?: boolean;
+  //page: string;
+  //getFilterValues: () => FilterValues;
+  //renderOptionExtra: (filterValues: FilterValues) => React.ReactNode;
+  //onSelect?: (filterValues: FilterValues) => void;
+//change to:
+interface Props<FilterValues extends Record<string, any>> {
   getFilterValues: () => FilterValues;
-  renderOptionExtra: (filterValues: FilterValues) => React.ReactNode;
-  onSelect?: (filterValues: FilterValues) => void;
+
+  renderOptionExtra: (
+    filterValues: Omit<FilterValues, '__version__'>
+  ) => React.ReactNode;
+
+  onSelect?: (
+    filterValues: Omit<FilterValues, '__version__'>
+  ) => void;
+
 
   oldFilterValues?: FilterValues;
   adjustOldFilterValues?: (values: any) => any;
