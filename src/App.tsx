@@ -53,6 +53,7 @@ import CustomerServiceFloatButton from 'plus:/components/CustomerServiceFloatBut
 
 import './App.less';
 import './global.variable.less';
+import './rtl.less'; // created src/rtl.less
 
 interface IProfile {
   admin?: boolean;
