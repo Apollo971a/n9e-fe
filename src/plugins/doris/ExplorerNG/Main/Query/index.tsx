@@ -84,7 +84,7 @@ export default function index(props: Props) {
   reverse: true,
   //refreshFlag: undefined,
   //change to:
-  refreshFlag?: string;
+  refreshFlag?: string,
   });
   const updateOptions = (newOptions, reload?: boolean) => {
     const mergedOptions = {
