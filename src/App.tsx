@@ -24,6 +24,7 @@ import ruRU from 'antd/lib/locale/ru_RU';
 import arEG from 'antd/lib/locale/ar_EG'; // add ar  there is no ar_AE, only ar_EG in antd
 import zhHK from 'antd/lib/locale/zh_HK'; // add hk
 import jaJP from 'antd/lib/locale/ja_JP'; // add ja
+import { RTL_LANGS } from '@/utils/constant'; // add RTL languages
 import 'antd/dist/antd.less';
 import { useTranslation } from 'react-i18next';
 import _ from 'lodash';
@@ -220,6 +221,25 @@ function App() {
     logsDefaultRange: { start: 'now-1h', end: 'now' },
   });
 
+  // ----------------- RTL LOGIC -----------------
+  useEffect(() => {
+    const isRTL = RTL_LANGS.includes(i18n.language);
+
+    // Set HTML and body direction
+    document.documentElement.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+    document.body.style.direction = isRTL ? 'rtl' : 'ltr';
+
+    // Optional: add RTL/LTR class for CSS targeting
+    if (isRTL) {
+      document.body.classList.add('rtl');
+      document.body.classList.remove('ltr');
+    } else {
+      document.body.classList.add('ltr');
+      document.body.classList.remove('rtl');
+    }
+  }, [i18n.language]);
+  // ---------------------------------------------
+
   const removePreloader = () => {
     const preloader = document.querySelector('.preloader');
     if (preloader) {
@@ -330,6 +350,23 @@ function App() {
   if (!initialized.current) {
     return null;
   }
+
+  // Determine AntD locale dynamically including RTL support
+  const antLocale =
+    i18n.language === 'en_US'
+      ? enUS
+      : i18n.language === 'ru_RU'
+      ? ruRU
+      : i18n.language === 'ar_AE'
+      ? arEG
+      : i18n.language === 'zh_HK'
+      ? zhHK
+      : i18n.language === 'ja_JP'
+      ? jaJP
+      : zhCN;
+
+  const antDirection = RTL_LANGS.includes(i18n.language) ? 'rtl' : 'ltr';
+  // ---------------------------------------------
 
   return (
     <div className='App'>
