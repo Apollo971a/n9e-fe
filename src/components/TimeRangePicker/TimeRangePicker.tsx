@@ -22,6 +22,9 @@ import momentGenerateConfig from 'rc-picker/es/generate/moment';
 import zh_CN from 'rc-picker/lib/locale/zh_CN';
 import zh_TW from 'rc-picker/lib/locale/zh_TW';
 import en_US from 'rc-picker/lib/locale/en_US';
+import ar_EG from 'rc-picker/lib/locale/ar_EG';  //add ar
+import ru_RU from 'rc-picker/lib/locale/ru_RU';  // add ru
+import ja_JP from 'rc-picker/lib/locale/ja_JP';  // add ja
 import 'rc-picker/assets/index.css';
 import classNames from 'classnames';
 import moment, { Moment } from 'moment';
@@ -43,6 +46,9 @@ const localeMap = {
   zh_CN: zh_CN,
   zh_HK: zh_TW,
   en_US: en_US,
+  ar_AE: ar_EG, //add ar
+  ru_RU: ru_RU,  // add ru
+  ja_JP: ja_JP,  // add ja
 };
 
 const absolutehistoryCacheKey = 'flashcat-timeRangePicker-absolute-history';
