@@ -82,7 +82,9 @@ export default function index(props: Props) {
     current: 1,
     pageSize: DEFAULT_LOGS_PAGE_SIZE,
     reverse: true,
-    refreshFlag: undefined,
+    // refreshFlag: undefined,
+    //change to:
+    refreshFlag: string | undefined;
   });
   const updateOptions = (newOptions, reload?: boolean) => {
     const mergedOptions = {
