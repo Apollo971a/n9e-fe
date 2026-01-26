@@ -1,0 +1,84 @@
+/* ===========================
+   Global RTL Support
+   =========================== */
+
+html[dir='rtl'] {
+  direction: rtl;
+}
+
+html[dir='rtl'] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ---------------------------
+   Fix Ant Design components
+---------------------------- */
+
+/* Dropdown, modal, tooltip */
+html[dir='rtl'] .ant-dropdown,
+html[dir='rtl'] .ant-modal,
+html[dir='rtl'] .ant-tooltip {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Table */
+html[dir='rtl'] .ant-table {
+  direction: rtl;
+}
+
+html[dir='rtl'] .ant-table-thead > tr > th {
+  text-align: right;
+}
+
+/* Form labels */
+html[dir='rtl'] .ant-form-item-label {
+  text-align: right;
+}
+
+/* Pagination */
+html[dir='rtl'] .ant-pagination {
+  direction: rtl;
+}
+
+/* Tabs */
+html[dir='rtl'] .ant-tabs-nav {
+  direction: rtl;
+}
+
+/* ---------------------------
+   Layout fixes
+---------------------------- */
+
+/* Header menu */
+html[dir='rtl'] .ant-layout-header {
+  text-align: right;
+}
+
+/* Side menu */
+html[dir='rtl'] .ant-menu {
+  direction: rtl;
+}
+
+html[dir='rtl'] .ant-menu-item,
+html[dir='rtl'] .ant-menu-submenu-title {
+  text-align: right;
+}
+
+/* Icons spacing fix */
+html[dir='rtl'] .ant-menu-item-icon {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+/* Breadcrumb */
+html[dir='rtl'] .ant-breadcrumb {
+  direction: rtl;
+}
+
+/* Buttons icon spacing */
+html[dir='rtl'] .ant-btn > span + span {
+  margin-right: 8px;
+  margin-left: 0;
+}
