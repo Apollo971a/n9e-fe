@@ -194,6 +194,7 @@ export default function TimeseriesCpt(props: Props) {
         getDsQuery(requestParams)
           .then((res) => {
             const series = _.map(res, (item) => {
+              const id = _.uniqueId('series_');  //define id
               return {
                 id: _.uniqueId('series_'),
                 refId: id, // ✅ ADD THIS
