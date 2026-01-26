@@ -114,3 +114,5 @@ export const LANGUAGE_MAP = {
   ru_RU: 'Русский',
   ar_AE: 'عربي',
 };
+//Add RTL definition
+export const RTL_LANGS = ['ar_AE']; 
