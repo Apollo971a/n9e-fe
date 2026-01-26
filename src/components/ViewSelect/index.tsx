@@ -305,8 +305,6 @@ export default function index<FilterValues extends Record<string, any>>(
                         </Space>
                       </Space>
                     </div>
-/*                     //{renderOptionExtra(_.omit(filterValues, '__version__'))}   */
-                    //change to:
                     {renderOptionExtra(_.omit(filterValues, '__version__') as FilterValues)}
 
                   </div>
