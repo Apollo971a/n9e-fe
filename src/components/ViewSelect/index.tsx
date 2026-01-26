@@ -305,7 +305,10 @@ export default function index<FilterValues extends Record<string, any>>(
                         </Space>
                       </Space>
                     </div>
-                    {renderOptionExtra(_.omit(filterValues, '__version__'))}
+                    //{renderOptionExtra(_.omit(filterValues, '__version__'))}
+                    //change to:
+                    {renderOptionExtra(_.omit(filterValues, '__version__') as FilterValues)}
+
                   </div>
                 ),
                 labelName: item.name,
@@ -326,7 +329,9 @@ export default function index<FilterValues extends Record<string, any>>(
                     console.warn('parse filter error', e);
                   }
                 }
-                onSelect(_.omit(filterValues, '__version__'));
+                //onSelect(_.omit(filterValues, '__version__'));
+                //change to:
+                onSelect(_.omit(filterValues, '__version__') as FilterValues);
               }
             }}
           />
