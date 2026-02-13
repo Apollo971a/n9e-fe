@@ -30,8 +30,8 @@
   --fc-fill-7-rgb: 151 156 163;
   --fc-fill-7: rgb(var(--fc-fill-7-rgb));
 
-  --fc-fill-primary-rgb: 108 83 177;
-  --fc-fill-primary: rgb(var(--fc-fill-primary-rgb));
+  --fc-fill-primary-rgb: 47 128 237; /* --fc-fill-primary-rgb: 108 83 177; */
+  --fc-fill-primary-rgb: 47 128 237; /* --fc-fill-primary: rgb(var(--fc-fill-primary-rgb)); */
 
   --fc-fill-success-rgb: 0 167 0;
   --fc-fill-success: rgb(var(--fc-fill-success-rgb));
@@ -53,13 +53,13 @@
   --fc-text-3: #666666;
   --fc-text-4: #999999;
   --fc-text-5: #d1d1d9;
-  --fc-text-link: #8162dc;
+  --fc-text-link: #2F80ED;  /*--fc-text-link: #8162dc; */
   --fc-text-link-light: #a186f4; /* 用于 tooltip 里加亮链接颜色 */
   --fc-text-link-rgb: 129, 98, 220;
   --fc-text-placeholder: #bfbfbf;
 
   /* 其他 */
-  --fc-primary-color: var(--fc-text-link);
+  --fc-primary-color: #2F80ED; /* --fc-primary-color: var(--fc-text-link); */
   --fc-border-color: var(--fc-fill-4);
   --fc-border-color2: #d9d9d9;
   --fc-border-base: var(--fc-fill-5);
@@ -158,7 +158,7 @@
   --fc-fill-7-rgb: 62 63 70;
   --fc-fill-7: rgb(var(--fc-fill-7-rgb));
 
-  --fc-fill-primary-rgb: 148 112 255;
+  --fc-fill-primary-rgb: 47 128 237; /* --fc-fill-primary-rgb: 148 112 255; */
   --fc-fill-primary: rgb(var(--fc-fill-primary-rgb));
 
   --fc-fill-success-rgb: 63 196 83;
@@ -176,7 +176,7 @@
   --fc-fill-gold: #ffbc0d;
 
   /* 文本 */
-  --fc-text-link: #9470ff;
+  --fc-text-link: #2F80ED; /* --fc-text-link: #9470ff; */
   --fc-text-link-rgb: 148, 112, 255;
   --fc-text-1: rgba(255, 255, 255);
   --fc-text-2: rgb(204, 204, 220);
@@ -186,7 +186,7 @@
   --fc-text-placeholder: rgba(204, 204, 220, 0.65);
 
   /* 其他 */
-  --fc-primary-color: var(--fc-text-link);
+  --fc-primary-color: #2F80ED; /* --fc-primary-color: var(--fc-text-link); */
   --fc-border-color: rgba(204, 204, 220, 0.12);
   --fc-border-color2: rgba(204, 204, 220, 0.2);
   --fc-border-base: var(--fc-fill-5);
