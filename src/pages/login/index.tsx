@@ -154,9 +154,6 @@ export default function Login() {
 
   return (
     <div className='login-warp'>
-
-//      {/* Cybertrek top-left logo */}
-//      <img src="/image/cybertrek.png" className="logo integration slim" />
       
       <div className='banner integration'>
         <img src={'/image/login-dashboard.svg'} style={{ margin: '0 60px', zIndex: 5, width: 632 }}></img>
